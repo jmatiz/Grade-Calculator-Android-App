@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    tools:context="Julian.Matiz.gradecalculator.act1">
+
+    <Button
+        android:id="@+id/activity_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:onClick="switch_activity"
+        android:text="@string/gpa_calculator" />
+
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_Input1"
+        android:layout_below="@+id/activity_Button"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/assignment_weight"
+        android:textColorHint="@color/colorAccent"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_Input2"
+        android:layout_below="@+id/user_Input1"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/assignment_grade"
+        android:textColorHint="@color/colorAccent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/add_Button"
+        android:layout_below="@+id/user_Input2"
+        android:layout_alignStart="@+id/user_Input2"
+        android:layout_marginTop="20dp"
+        android:onClick="addButtonClicked" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:id="@+id/delete_Button"
+        android:layout_alignTop="@+id/add_Button"
+        android:layout_alignEnd="@+id/user_Input2"
+        android:onClick="deleteButtonClicked" />
+
+    <TextView
+        android:id="@+id/records_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_Button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate Grade"
+        android:id="@+id/gpa_Button"
+        android:layout_below="@+id/records_TextView"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="gpaButtonClicked" />
+
+    <TextView
+        android:id="@+id/gpa_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gpa_Button"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="Grade"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+</RelativeLayout>

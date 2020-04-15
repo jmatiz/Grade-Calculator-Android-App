@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Grade Calculator</string>
+    <string name="grade_hint"><i>Grade (A, B+, C-,...)</i></string>
+    <string name="course_hint"><i>Course Name</i></string>
+    <string name="gpa_calculator"><![CDATA[< GPA Calculator <]]></string>
+    <string name="course_grade_calculator"><![CDATA[> Course Grade Calculator >]]></string>
+    <string name="assignment_weight"><i>Assignment Weight (10, 20,...)</i></string>
+    <string name="assignment_grade"><i>Assignment Grade (85, 92,...)</i></string>
+</resources>
